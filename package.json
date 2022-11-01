@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/NamgyungKim/vue2-test"
+    "type": "git",
+    "url": "https://github.com/NamgyungKim/vue2-test"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx webpack-dev-server --mode development",
-    "build": "npx webpack --mode production"
+    "build": "npx webpack --mode production",
+    "sb": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [
     "vue2"
@@ -20,6 +22,14 @@
   "devDependencies": {
     "@babel/core": "^7.19.6",
     "@babel/preset-env": "^7.19.4",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/builder-webpack5": "^6.5.13",
+    "@storybook/manager-webpack5": "^6.5.13",
+    "@storybook/testing-library": "^0.0.13",
+    "@storybook/vue": "^6.5.13",
     "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
