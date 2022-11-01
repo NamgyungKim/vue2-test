@@ -14,6 +14,9 @@ const config = {
     filename: "[name].js", // app.js
     path: path.join(__dirname, "build"),
   },
+  resolve: {
+    extensions: [".vue", ".js"],
+  },
   module: {
     rules: [
       {
